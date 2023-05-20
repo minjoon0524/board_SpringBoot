@@ -13,7 +13,7 @@ public class BoardService {
     private BoardRepository boardRepository;
     //글작성 처리
     public void write(Board board){
-        boardRepository.save(board);
+    boardRepository.save(board);
 
     }
     //게시물 리스트 처리
@@ -21,7 +21,7 @@ public class BoardService {
         //findAll : 테스트보드라는 클래스가 담긴 List를 반환하는것을 확인할수있다.
         return boardRepository.findAll();
     }
-
+    
     //특정 게시물 불러오기
     public Board boardView(Integer id){
         System.out.println(boardRepository.findById(id).get());
