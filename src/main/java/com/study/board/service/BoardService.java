@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+
 @Service
 public class BoardService {
     @Autowired//new를 써야하지만, 스프링부트가 알아서 읽어와서 주입을해준다.
